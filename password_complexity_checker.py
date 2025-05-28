@@ -16,7 +16,7 @@ def assess_password_strength(password):
 
 while True:
     password = input("Enter your password: ")
-    result = assess_password_complexity(password)
+    result = assess_password_strength(password)
     print(result)
     if result == "Password is strong.":
         break
