@@ -1,6 +1,6 @@
-def assess_password_complexity(password):
+def assess_password_strength(password):
     feedback = []
-
+#critera to check for:
     if len(password) < 8:
         feedback.append("Password must be at least 8 characters long.")
     if not any(char.isupper() for char in password):
